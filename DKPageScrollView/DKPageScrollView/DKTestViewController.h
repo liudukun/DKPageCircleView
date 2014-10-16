@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DKPageScrollView.h"
 
 @interface DKTestViewController : UIViewController
 

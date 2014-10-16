@@ -7,8 +7,9 @@
 //
 
 #import "DKTestViewController.h"
+#import "DKPageScrollView.h"
 
-@interface DKTestViewController ()
+@interface DKTestViewController ()<DKPageScrollViewDelegate>
 
 @end
 
@@ -27,12 +28,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    DKPageScrollView * view = [DKPageScrollView pageScrollViewWithNumberOfCells:10 frame:CGRectMake(0, 0, 320, 320) cellSize:CGSizeMake(100, 320)];
+    view.delegate = self;
+    self.view.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)pageScrollViewActionTouched:(DKPageScrollViewCell *)cell index:(int)index{
+    
 }
 
 @end

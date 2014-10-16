@@ -213,6 +213,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ldk;
 				TargetAttributes = {
+					1848AD4019C8242E0036318E = {
+						DevelopmentTeam = 6Q72F76TU8;
+					};
 					1848AD5B19C8242E0036318E = {
 						TestTargetID = 1848AD4019C8242E0036318E;
 					};
@@ -382,10 +385,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: lu yi (K36P5VLP9F)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageScrollView-Prefix.pch";
 				INFOPLIST_FILE = "DKPageScrollView/DKPageScrollView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,10 +401,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: lu yi (K36P5VLP9F)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageScrollView-Prefix.pch";
 				INFOPLIST_FILE = "DKPageScrollView/DKPageScrollView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -462,6 +471,7 @@
 				1848AD6F19C8242E0036318E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1848AD7019C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +480,7 @@
 				1848AD7219C8242E0036318E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
