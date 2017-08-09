@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DKPageScrollView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface DKTestViewController : UIViewController
 

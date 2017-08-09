@@ -8,41 +8,106 @@
 
 #import <UIKit/UIKit.h>
 
+
+/// PageControl 的位置
 typedef enum : NSUInteger {
-    PageScrollViewStyleNormal,
-    PageScrollViewStyleSpecail
-} PageScrollViewStyle;
+    DKPageControlPositionCenter,
+    DKPageControlPositionLeft,
+    DKPageControlPositionRight,
+} DKPageControlPosition;
+
+/// Scorll direction
+typedef enum : NSUInteger {
+    DKScrollDirectionHoriontal,
+    DKScrollDirectionVertical
+} DKScrollDirection;
+
+/// turn style
+typedef enum : NSUInteger {
+    DKTurnSyleHoriontal,
+    DKTurnSyleVertical
+} DKTurnSyle;
 
 
-@class DKPageScrollViewCell;
+UIKIT_EXTERN NSString* const DKAnimationTypeNormal;                     //普通左滑右滑
+UIKIT_EXTERN NSString* const DKAnimationTypeMoveIn;                     //覆盖
+UIKIT_EXTERN NSString* const DKAnimationTypeFade;                       //淡入淡出
+UIKIT_EXTERN NSString* const DKAnimationTypeCube;                       //立方体
+UIKIT_EXTERN NSString* const DKAnimationTypeSuckEffect;                 //吮吸
+UIKIT_EXTERN NSString* const DKAnimationTypeOglFlip;                    //翻转
+UIKIT_EXTERN NSString* const DKAnimationTypeRippleEffect;               //波纹
+UIKIT_EXTERN NSString* const DKAnimationTypePageCurl;                   //翻页
+UIKIT_EXTERN NSString* const DKAnimationTypePageUnCurl;                 //反翻页
 
-@protocol DKPageScrollViewCellDelegate <NSObject>
 
-- (void)pageScrollViewActionTouched:(DKPageScrollViewCell*)cell index:(int)index;
 
-@end
+@class DKPageScrollView;
 
 @protocol DKPageScrollViewDelegate <NSObject>
 
-- (void)pageScrollViewActionTouched:(DKPageScrollViewCell*)cell index:(int)index;
+@required
+/// page 数量
+- (NSUInteger)numberOfPages;
+
+/// 设置每一个page
+- (UIView *)pageScrollView:(DKPageScrollView *)pageScroll viewOfPage:(NSUInteger)page;
+
+@optional
+
+/// page 被选择的时候被调用
+- (void)pageScrollView:(DKPageScrollView *)pageScroll viewSelectedOfPage:(NSUInteger)page;
+
 
 @end
 
 
 @interface DKPageScrollView : UIView
-@property  (nonatomic,strong) NSMutableArray * cells;
+
+/// scroll back
 @property (nonatomic,strong) UIScrollView * scrollView;
-@property (nonatomic) CGSize cellSize;
-@property (nonatomic,strong) id<DKPageScrollViewDelegate> delegate;
+
+/// page control
 @property (nonatomic,strong) UIPageControl * pageControl;
-@property (nonatomic,strong) NSTimer * timer;
-@property (nonatomic) PageScrollViewStyle style;
 
-- (void)switchPage;
-+ (DKPageScrollView*)pageScrollViewWithNumberOfCells:(int)number frame:(CGRect)frame cellSize:(CGSize)size;
+/// timer;
+@property (nonatomic,strong) NSTimer *timer;
 
-- (void)addImagesWithPics:(NSArray*)pic;
+/// 循环轮播 repeat = yes的时候 所有view 循环播放,没有尽头.
+@property (nonatomic) BOOL repeat;
 
-- (void)addImagesWithPicUrls:(NSArray*)urls;
+/** 
+    设置自动轮播的时间间隔
+    默认 turnTimeInterval = 0
+    假如 turnTimeInterval = 0 , 不自动轮播.
+ */
+@property (nonatomic) NSTimeInterval turnTimeInterval;
+
+/// 设置轮播动画时间
+@property (nonatomic) NSTimeInterval turnTime;
+
+//// 设置激活时间  default = 10s
+@property (nonatomic) NSTimeInterval activeTime;
+
+@property (nonatomic,weak) id<DKPageScrollViewDelegate> delegate;
+
+/// set pagecontrol position
+@property (nonatomic) DKPageControlPosition pageControlPostion;
+
+/// set Scroll Direction
+@property (nonatomic) DKScrollDirection scrollDirection;
+
+
+/// get and set current index 当前Index
+@property (nonatomic) NSInteger currentIndex;
+
+/// set animation type 动画类型
+@property (nonatomic,strong) NSString *animationType;
+
+/// set animation sutype 动画方向
+@property (nonatomic,strong) NSString *animationSubType;
+
+- (instancetype)initWithFrame:(CGRect)frame animationType:(NSString *)animationType;
+
+- (void)reloadData;
 
 @end

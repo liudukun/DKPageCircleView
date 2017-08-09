@@ -9,29 +9,40 @@
 #import "DKTestViewController.h"
 #import "DKPageScrollView.h"
 
-@interface DKTestViewController ()<DKPageScrollViewDelegate>
 
+@interface DKTestViewController ()<DKPageScrollViewDelegate>
+{
+    NSArray * lists;
+}
 @end
 
 @implementation DKTestViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    DKPageScrollView * view = [DKPageScrollView pageScrollViewWithNumberOfCells:10 frame:CGRectMake(0, 0, 320, 320) cellSize:CGSizeMake(100, 320)];
+}
+
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    DKPageScrollView * view = [[DKPageScrollView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
+    view.turnTimeInterval = 2.f;
+    view.turnTime = 1.f;
+    view.repeat = YES;
     view.delegate = self;
-    self.view.backgroundColor = [UIColor grayColor];
+    view.pageControlPostion = DKPageControlPositionCenter;
+    view.scrollDirection = DKScrollDirectionHoriontal;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
+    lists = @[@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg"];
+    view.animationType = DKAnimationTypeNormal;
+//    view.animationSubType = kCATransitionFromLeft;
+    [view reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,8 +51,27 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)pageScrollViewActionTouched:(DKPageScrollViewCell *)cell index:(int)index{
+/// page 数量
+- (NSUInteger)numberOfPages{
+    return lists.count;
+}
+
+/// 设置每一个page
+- (UIView *)pageScrollView:(DKPageScrollView *)pageScroll viewOfPage:(NSUInteger)page{
+    UIImageView *view = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
+    view.image = [UIImage imageNamed:lists[page]];
+    UILabel *l = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
+    l.textColor = [UIColor whiteColor];
+    l.font = [UIFont systemFontOfSize:25];
+    l.text = [@(page) stringValue];
+    [view addSubview:l];
+    return view;
+}
+
+/// page 被选择的时候被调用
+- (void)pageScrollView:(DKPageScrollView *)pageScroll viewSelectedOfPage:(NSUInteger)page{
     
 }
+
 
 @end
