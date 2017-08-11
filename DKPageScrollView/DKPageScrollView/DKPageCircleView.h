@@ -29,7 +29,7 @@ typedef enum : NSUInteger {
 } DKTurnSyle;
 
 
-UIKIT_EXTERN NSString* const DKAnimationTypeNormal;                     //普通左滑右滑
+UIKIT_EXTERN NSString* const DKAnimationTypePush;                     //普通左滑右滑
 UIKIT_EXTERN NSString* const DKAnimationTypeMoveIn;                     //覆盖
 UIKIT_EXTERN NSString* const DKAnimationTypeFade;                       //淡入淡出
 UIKIT_EXTERN NSString* const DKAnimationTypeCube;                       //立方体
@@ -62,9 +62,6 @@ UIKIT_EXTERN NSString* const DKAnimationTypePageUnCurl;                 //反翻
 
 
 @interface DKPageScrollView : UIView
-
-/// scroll back
-@property (nonatomic,strong) UIScrollView * scrollView;
 
 /// page control
 @property (nonatomic,strong) UIPageControl * pageControl;

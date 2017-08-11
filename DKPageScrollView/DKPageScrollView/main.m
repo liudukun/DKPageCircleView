@@ -1,6 +1,6 @@
     //
 //  main.m
-//  DKPageScrollView
+//  DKPageCircleView
 //
 //  Created by imac_ldk on 14-9-16.
 //  Copyright (c) 2014年 ldk. All rights reserved.

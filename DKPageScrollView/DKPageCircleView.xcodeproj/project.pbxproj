@@ -20,11 +20,11 @@
 		1848AD6819C8242E0036318E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1848AD6619C8242E0036318E /* InfoPlist.strings */; };
 		1848AD6A19C8242E0036318E /* DKPageScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848AD6919C8242E0036318E /* DKPageScrollViewTests.m */; };
 		1848AD7619C8243F0036318E /* DKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848AD7419C8243F0036318E /* DKTestViewController.m */; };
-		1848AD7B19C824DA0036318E /* DKPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848AD7A19C824DA0036318E /* DKPageScrollView.m */; };
 		E338A02F1F38572200A6C059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338A02E1F38572200A6C059 /* Launch Screen.storyboard */; };
 		E34224F01F39A4260018ADA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34224EF1F39A4260018ADA7 /* QuartzCore.framework */; };
 		E34224F31F39A8F80018ADA7 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E34224F11F39A8F80018ADA7 /* 02.jpg */; };
 		E34224F41F39A8F80018ADA7 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E34224F21F39A8F80018ADA7 /* 01.jpg */; };
+		E3C622ED1F3D5F0C003F2D03 /* DKPageCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C622EC1F3D5F0C003F2D03 /* DKPageCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,30 +38,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1848AD4119C8242E0036318E /* DKPageScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKPageScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1848AD4119C8242E0036318E /* DKPageCircleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKPageCircleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1848AD4419C8242E0036318E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1848AD4619C8242E0036318E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1848AD4819C8242E0036318E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1848AD4C19C8242E0036318E /* DKPageScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKPageScrollView-Info.plist"; sourceTree = "<group>"; };
+		1848AD4C19C8242E0036318E /* DKPageCircleView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKPageCircleView-Info.plist"; sourceTree = "<group>"; };
 		1848AD4E19C8242E0036318E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1848AD5019C8242E0036318E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1848AD5219C8242E0036318E /* DKPageScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPageScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		1848AD5219C8242E0036318E /* DKPageCircleView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKPageCircleView-Prefix.pch"; sourceTree = "<group>"; };
 		1848AD5319C8242E0036318E /* DKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAppDelegate.h; sourceTree = "<group>"; };
 		1848AD5419C8242E0036318E /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
 		1848AD5619C8242E0036318E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1848AD5C19C8242E0036318E /* DKPageScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKPageScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1848AD5C19C8242E0036318E /* DKPageCircleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKPageCircleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1848AD5D19C8242E0036318E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1848AD6519C8242E0036318E /* DKPageScrollViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKPageScrollViewTests-Info.plist"; sourceTree = "<group>"; };
+		1848AD6519C8242E0036318E /* DKPageCircleViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKPageCircleViewTests-Info.plist"; sourceTree = "<group>"; };
 		1848AD6719C8242E0036318E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1848AD6919C8242E0036318E /* DKPageScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKPageScrollViewTests.m; sourceTree = "<group>"; };
 		1848AD7319C8243F0036318E /* DKTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTestViewController.h; sourceTree = "<group>"; };
 		1848AD7419C8243F0036318E /* DKTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTestViewController.m; sourceTree = "<group>"; };
-		1848AD7919C824DA0036318E /* DKPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKPageScrollView.h; sourceTree = "<group>"; };
-		1848AD7A19C824DA0036318E /* DKPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKPageScrollView.m; sourceTree = "<group>"; };
 		E338A02E1F38572200A6C059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E34224EF1F39A4260018ADA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E34224F11F39A8F80018ADA7 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 		E34224F21F39A8F80018ADA7 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		E3C622EB1F3D5F0C003F2D03 /* DKPageCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKPageCircleView.h; sourceTree = "<group>"; };
+		E3C622EC1F3D5F0C003F2D03 /* DKPageCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKPageCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		1848AD3819C8242E0036318E = {
 			isa = PBXGroup;
 			children = (
-				1848AD4A19C8242E0036318E /* DKPageScrollView */,
+				1848AD4A19C8242E0036318E /* DKPageCircleView */,
 				1848AD6319C8242E0036318E /* DKPageScrollViewTests */,
 				1848AD4319C8242E0036318E /* Frameworks */,
 				1848AD4219C8242E0036318E /* Products */,
@@ -102,8 +102,8 @@
 		1848AD4219C8242E0036318E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1848AD4119C8242E0036318E /* DKPageScrollView.app */,
-				1848AD5C19C8242E0036318E /* DKPageScrollViewTests.xctest */,
+				1848AD4119C8242E0036318E /* DKPageCircleView.app */,
+				1848AD5C19C8242E0036318E /* DKPageCircleViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,10 +120,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1848AD4A19C8242E0036318E /* DKPageScrollView */ = {
+		1848AD4A19C8242E0036318E /* DKPageCircleView */ = {
 			isa = PBXGroup;
 			children = (
-				1848AD7819C824980036318E /* classes */,
+				E3C622EA1F3D5F0C003F2D03 /* class */,
 				1848AD5319C8242E0036318E /* DKAppDelegate.h */,
 				1848AD5419C8242E0036318E /* DKAppDelegate.m */,
 				1848AD7319C8243F0036318E /* DKTestViewController.h */,
@@ -134,16 +134,17 @@
 				1848AD5619C8242E0036318E /* Images.xcassets */,
 				1848AD4B19C8242E0036318E /* Supporting Files */,
 			);
+			name = DKPageCircleView;
 			path = DKPageScrollView;
 			sourceTree = "<group>";
 		};
 		1848AD4B19C8242E0036318E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1848AD4C19C8242E0036318E /* DKPageScrollView-Info.plist */,
+				1848AD4C19C8242E0036318E /* DKPageCircleView-Info.plist */,
 				1848AD4D19C8242E0036318E /* InfoPlist.strings */,
 				1848AD5019C8242E0036318E /* main.m */,
-				1848AD5219C8242E0036318E /* DKPageScrollView-Prefix.pch */,
+				1848AD5219C8242E0036318E /* DKPageCircleView-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,27 +161,27 @@
 		1848AD6419C8242E0036318E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1848AD6519C8242E0036318E /* DKPageScrollViewTests-Info.plist */,
+				1848AD6519C8242E0036318E /* DKPageCircleViewTests-Info.plist */,
 				1848AD6619C8242E0036318E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1848AD7819C824980036318E /* classes */ = {
+		E3C622EA1F3D5F0C003F2D03 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				1848AD7919C824DA0036318E /* DKPageScrollView.h */,
-				1848AD7A19C824DA0036318E /* DKPageScrollView.m */,
+				E3C622EB1F3D5F0C003F2D03 /* DKPageCircleView.h */,
+				E3C622EC1F3D5F0C003F2D03 /* DKPageCircleView.m */,
 			);
-			name = classes;
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1848AD4019C8242E0036318E /* DKPageScrollView */ = {
+		1848AD4019C8242E0036318E /* DKPageCircleView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1848AD6D19C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageScrollView" */;
+			buildConfigurationList = 1848AD6D19C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageCircleView" */;
 			buildPhases = (
 				1848AD3D19C8242E0036318E /* Sources */,
 				1848AD3E19C8242E0036318E /* Frameworks */,
@@ -190,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = DKPageScrollView;
+			name = DKPageCircleView;
 			productName = DKPageScrollView;
-			productReference = 1848AD4119C8242E0036318E /* DKPageScrollView.app */;
+			productReference = 1848AD4119C8242E0036318E /* DKPageCircleView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1848AD5B19C8242E0036318E /* DKPageScrollViewTests */ = {
+		1848AD5B19C8242E0036318E /* DKPageCircleViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1848AD7019C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageScrollViewTests" */;
+			buildConfigurationList = 1848AD7019C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageCircleViewTests" */;
 			buildPhases = (
 				1848AD5819C8242E0036318E /* Sources */,
 				1848AD5919C8242E0036318E /* Frameworks */,
@@ -208,9 +209,9 @@
 			dependencies = (
 				1848AD6219C8242E0036318E /* PBXTargetDependency */,
 			);
-			name = DKPageScrollViewTests;
+			name = DKPageCircleViewTests;
 			productName = DKPageScrollViewTests;
-			productReference = 1848AD5C19C8242E0036318E /* DKPageScrollViewTests.xctest */;
+			productReference = 1848AD5C19C8242E0036318E /* DKPageCircleViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1848AD3C19C8242E0036318E /* Build configuration list for PBXProject "DKPageScrollView" */;
+			buildConfigurationList = 1848AD3C19C8242E0036318E /* Build configuration list for PBXProject "DKPageCircleView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,8 +245,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1848AD4019C8242E0036318E /* DKPageScrollView */,
-				1848AD5B19C8242E0036318E /* DKPageScrollViewTests */,
+				1848AD4019C8242E0036318E /* DKPageCircleView */,
+				1848AD5B19C8242E0036318E /* DKPageCircleViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,8 +281,8 @@
 			files = (
 				1848AD7619C8243F0036318E /* DKTestViewController.m in Sources */,
 				1848AD5119C8242E0036318E /* main.m in Sources */,
+				E3C622ED1F3D5F0C003F2D03 /* DKPageCircleView.m in Sources */,
 				1848AD5519C8242E0036318E /* DKAppDelegate.m in Sources */,
-				1848AD7B19C824DA0036318E /* DKPageScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +299,7 @@
 /* Begin PBXTargetDependency section */
 		1848AD6219C8242E0036318E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1848AD4019C8242E0036318E /* DKPageScrollView */;
+			target = 1848AD4019C8242E0036318E /* DKPageCircleView */;
 			targetProxy = 1848AD6119C8242E0036318E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,8 +413,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = HUH8GRN724;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageScrollView-Prefix.pch";
-				INFOPLIST_FILE = "DKPageScrollView/DKPageScrollView-Info.plist";
+				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageCircleView-Prefix.pch";
+				INFOPLIST_FILE = "DKPageScrollView/DKPageCircleView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "liudukun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,8 +432,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = HUH8GRN724;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageScrollView-Prefix.pch";
-				INFOPLIST_FILE = "DKPageScrollView/DKPageScrollView-Info.plist";
+				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageCircleView-Prefix.pch";
+				INFOPLIST_FILE = "DKPageScrollView/DKPageCircleView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "liudukun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,7 +458,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DKPageScrollViewTests/DKPageScrollViewTests-Info.plist";
+				INFOPLIST_FILE = "DKPageScrollViewTests/DKPageCircleViewTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "liudukun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -476,7 +477,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKPageScrollView/DKPageScrollView-Prefix.pch";
-				INFOPLIST_FILE = "DKPageScrollViewTests/DKPageScrollViewTests-Info.plist";
+				INFOPLIST_FILE = "DKPageScrollViewTests/DKPageCircleViewTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "liudukun.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -487,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1848AD3C19C8242E0036318E /* Build configuration list for PBXProject "DKPageScrollView" */ = {
+		1848AD3C19C8242E0036318E /* Build configuration list for PBXProject "DKPageCircleView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1848AD6B19C8242E0036318E /* Debug */,
@@ -496,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1848AD6D19C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageScrollView" */ = {
+		1848AD6D19C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageCircleView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1848AD6E19C8242E0036318E /* Debug */,
@@ -505,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1848AD7019C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageScrollViewTests" */ = {
+		1848AD7019C8242E0036318E /* Build configuration list for PBXNativeTarget "DKPageCircleViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1848AD7119C8242E0036318E /* Debug */,

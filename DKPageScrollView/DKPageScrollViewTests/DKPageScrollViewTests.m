@@ -1,6 +1,6 @@
 //
-//  DKPageScrollViewTests.m
-//  DKPageScrollViewTests
+//  DKPageCircleViewTests.m
+//  DKPageCircleViewTests
 //
 //  Created by imac_ldk on 14-9-16.
 //  Copyright (c) 2014年 ldk. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface DKPageScrollViewTests : XCTestCase
+@interface DKPageCircleViewTests : XCTestCase
 
 @end
 
-@implementation DKPageScrollViewTests
+@implementation DKPageCircleViewTests
 
 - (void)setUp
 {

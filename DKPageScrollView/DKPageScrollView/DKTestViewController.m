@@ -1,16 +1,16 @@
 //
 //  DKTestViewController.m
-//  DKPageScrollView
+//  DKPageCircleView
 //
 //  Created by imac_ldk on 14-9-16.
 //  Copyright (c) 2014年 ldk. All rights reserved.
 //
 
 #import "DKTestViewController.h"
-#import "DKPageScrollView.h"
+#import "DKPageCircleView.h"
 
 
-@interface DKTestViewController ()<DKPageScrollViewDelegate>
+@interface DKTestViewController ()<DKPageCircleViewDelegate>
 {
     NSArray * lists;
 }
@@ -29,20 +29,19 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    DKPageScrollView * view = [[DKPageScrollView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
+    DKPageCircleView * view = [[DKPageCircleView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
     view.turnTimeInterval = 2.f;
     view.turnTime = 1.f;
     view.repeat = YES;
     view.delegate = self;
     view.pageControlPostion = DKPageControlPositionCenter;
-    view.scrollDirection = DKScrollDirectionHoriontal;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
     lists = @[@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg"];
-    view.animationType = DKAnimationTypeNormal;
-//    view.animationSubType = kCATransitionFromLeft;
+    view.animationType = DKAnimationTypePageCurl;
+    view.animationSubType = DKAnimationSubTypeFromTop;
+//    view.randomAnimation = YES;
     [view reloadData];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +56,7 @@
 }
 
 /// 设置每一个page
-- (UIView *)pageScrollView:(DKPageScrollView *)pageScroll viewOfPage:(NSUInteger)page{
+- (UIView *)pageCircleView:(DKPageCircleView *)circleView viewOfIndex:(NSUInteger)page{
     UIImageView *view = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     view.image = [UIImage imageNamed:lists[page]];
     UILabel *l = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 50)];
@@ -69,7 +68,7 @@
 }
 
 /// page 被选择的时候被调用
-- (void)pageScrollView:(DKPageScrollView *)pageScroll viewSelectedOfPage:(NSUInteger)page{
+- (void)pageCircleView:(DKPageCircleView *)circleView viewSelectedOfIndex:(NSUInteger)index{
     
 }
 
