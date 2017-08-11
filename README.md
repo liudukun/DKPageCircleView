@@ -3,7 +3,7 @@
 
 
 实现方式类似 UITableView 用法 如下:
-
+```
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     DKPageCircleView * view = [[DKPageCircleView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
@@ -46,3 +46,4 @@
     // u code
 }
 
+```
