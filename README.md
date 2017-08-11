@@ -2,8 +2,8 @@
 广告栏控件,支持各种动画效果,效率优化
 
 
-实现方式类似 UITableView 用法 如下:
-```
+## 实现方式类似 UITableView 用法 如下:
+`````
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     DKPageCircleView * view = [[DKPageCircleView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 200)];
@@ -20,9 +20,6 @@
     view.randomAnimation = YES;
     [view reloadData];
 }
-
-
-
 
 /// page 数量
 - (NSUInteger)numberOfPages{
