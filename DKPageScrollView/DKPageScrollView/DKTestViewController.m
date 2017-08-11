@@ -40,7 +40,7 @@
     lists = @[@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg"];
     view.animationType = DKAnimationTypePageCurl;
     view.animationSubType = DKAnimationSubTypeFromTop;
-//    view.randomAnimation = YES;
+    view.randomAnimation = YES;
     [view reloadData];
 }
 
