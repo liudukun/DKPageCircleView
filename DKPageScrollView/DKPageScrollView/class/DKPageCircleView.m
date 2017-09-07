@@ -98,7 +98,7 @@
             type = @"moveIn";
             break;
         case DKAnimationTypeFade:
-            type = @"fademoveIn";
+            type = @"fade";
             break;
         case DKAnimationTypeCube:
             type = @"cube";
@@ -140,6 +140,7 @@
     CATransition *animation = [CATransition animation];
     animation.type = type;
     animation.duration = self.turnTime;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.subtype = subType;
     [view.layer addAnimation:animation forKey:@"transition"];
 }
@@ -213,6 +214,10 @@
     if ([gestureRecognizer isKindOfClass:[UISwipeGestureRecognizer class]]) {
         [self pauseTimerAndRunAfterTenSec];
     }
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
     return YES;
 }
 

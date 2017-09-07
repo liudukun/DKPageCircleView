@@ -23,6 +23,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
 }
 
 
@@ -38,8 +39,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
     lists = @[@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg",@"01.jpg",@"02.jpg"];
-    view.animationType = DKAnimationTypePageCurl;
-    view.animationSubType = DKAnimationSubTypeFromTop;
+//    view.animationType = DKAnimationTypeCube;
+//    view.animationSubType = DKAnimationSubTypeFromLeft;
     view.randomAnimation = YES;
     [view reloadData];
 }
